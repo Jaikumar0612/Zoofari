@@ -1,0 +1,136 @@
+<html>
+<head>
+<title>zoofari</title>
+<link rel="stylesheet" href="css.css">
+<link rel="icon" type="image/x-icon" href="logo1.png">
+<style>
+body{
+	background-image:url("https://bannerghattabiologicalpark.org/assets/images/adoptbg.jpg");
+	}
+.tablink{
+  border: 2px solid black;
+  background-color:peru;
+  color:white;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+}
+.adapt {
+  border-color:aliceblue;
+  color:black;
+}
+
+.adapt:hover {
+  background-color:white;
+  color:black;
+}
+.tabcontent
+{
+	color:black;
+	font-size: large;
+}
+</style>
+</head>
+<body>
+<div class="icon">
+	<a href="index.html">
+		<img src="logo1.png" height="150" width="160">
+	</a>	
+	<div class="bookings">
+	<a href="donation.html" class="button">&#36;Adaption/donation</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+	<a href="booking.html" class="button">&#36;bookings</a>
+	</div>
+</div>
+<div class="nav">
+	<a href="index.html" class="button1">Home</a>
+	<a href="about.html" class="button1">About us</a>
+	<a href="safari.html" class="button1">safari</a>	
+	<a href="zoo.html" class="button1">Zoo</a>
+	<a href="facilities.html" class="button1">Facilities</a>
+	<a href="traif.html" class="button1">Traif</a>
+	<a href="gallery.html" class="button1">Gallery</a>
+	<a href="contact.html" class="button1">Contact us</a>
+</div>
+<center>
+	<table border="1" class="table1">
+		<tr>
+			<td>
+				<div><center>
+					<button class="tablink adapt" onclick="openPage('Home', this)">Adaption</button>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<button class="tablink adapt" onclick="openPage('News', this)">Donation</button></center>
+					<p id="defaultOpen"></p>
+					<div id="Home" class="tabcontent">
+					<h2>Adaption</h2>
+					<p>If you have idea to adapt any animal please contact us<br>
+						By using the link below<br>
+						<a href="contact.html" class="f">contact us</a>
+					</p>
+					</div>
+					<div id="News" class="tabcontent">
+					<h2>Donation</h2>
+					<p>This is the donation site so that you can donate for one or you can donate monthly<br>
+						For further details please contact us our team will consider your kindness soon<br>
+						<a href="contact.html" class="f">contact us</a>
+					</p> 
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</center>
+<script>
+	function openPage(pageName,elmnt,color) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	  }
+	  document.getElementById(pageName).style.display = "block";
+	}
+	</script>
+<footer>
+	<div>
+		<div class="column">
+			<h4 style="color: white;">PARK INFORMATION</h4>
+			<ul>
+				<li><a href="about.html" class="f">About PARK</a></li>
+				<li><a href="safari.html" class="f">FLORA & FAUNA</a></li>
+				<li><a href="gallery.html" class="f">GALLERY</a></li>
+				<li><a href="about.html" class="f">HIGHLIGHTS</a></li>
+				<li><a href="contact.html" class="f">CONTACT US</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<h4 style="color: white;">TRAVEL INFORMATION</h4>
+			<ul>
+				<li><a href="traif.html" class="f">TRAIFF</a></li>
+				<li><a href="about.html" class="f">TIME TO VISIT</a></li>
+				<li><a href="about.html" class="f">MAP</a></li>
+				<li><a href="facilities.html" class="f">FACILITIES</a></li>
+				<li><a href="about.html" class="f">HOW TO REACH</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<h4 style="color: white;">PLACES TO SEE</h4>
+			<ul>
+				<li><a href="index.html" class="f">BOATING</a></li>
+				<li><a href="zoo.html" class="f">ZOO</a></li>
+				<li><a href="safari.html" class="f">SAFARI</a></li>
+				<li><a href="about.html" class="f">BUTTERFLY PARK</a></li>
+				<li><a href="safari.html" class="f">WILDERNESS TOURISM</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<h4 style="color: white;">SUPPORT</h4>
+			<ul>
+				<li><a href="about.html" class="f">RESCUE TEAM</a></li>
+				<li><a href="facilities.html" class="f">ANIMAL VETERINARY</a></li>
+				<li><a href="donation.html" class="f">ADOPTION SCHEME</a></li>
+				<li><a href="about.html" class="f">ZOO EDUCATION</a></li>
+				<li><a href="contact.html" class="f">PUBLICATION</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

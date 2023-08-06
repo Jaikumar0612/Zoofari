@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>zoofari</title>
+ <link rel="stylesheet" href="css.css">
+ <link rel="icon" type="image/x-icon" href="logo1.png">
+ <style>
+ body{
+	background-image:url("https://bannerghattabiologicalpark.org/assets/images/adoptbg.jpg")
+	}
+ </style>
+</head>
+<body>
+<div class="icon">
+	<a href="index.html">
+		<img src="logo1.png" height="150" width="160">
+	</a>	
+	<div class="bookings">
+	<a href="donation.html" class="button">&#36;Adaption/donation</a>&emsp;&emsp;&emsp;&emsp;&emsp;
+	<a href="booking.html" class="button">&#36;bookings</a>
+	</div>
+</div>
+<div class="nav">
+	<a href="index.html" class="button1">Home</a>
+	<a href="about.html" class="button1">About us</a>
+	<a href="safari.html" class="button1">safari</a>	
+	<a href="zoo.html" class="button1">Zoo</a>
+	<a href="facilities.html" class="button1">Facilities</a>
+	<a href="traif.html" class="button1">Traif</a>
+	<a href="gallery.html" class="button1">Gallery</a>
+	<a href="contact.html" class="button1">Contact us</a>
+</div>
+<center>
+    <table class="table1" border="1">
+        <tr>
+            <td>
+                <div style="background-color:peru;">
+                    <h1>Welcome to the zoofari Booking Portal</h1>
+                </div>
+                <form>
+                    <div>
+                        <label for="name">Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="your name">
+                    </div>
+                    <div>
+                        <label for="date">Date of visit:</label>
+                    </div>
+                    <div><input type="date"></div>
+                    <div>
+                        <label for="ticket" id="n">Number of tickets you want:</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="enter only numbers">
+                    </div>
+                    <div><label for="nationality">Nationality:</label></div>
+                    <div>
+                        <input type="radio" id="indian" name="indian" value="indian">
+                    <label for="indian">Indian</label>
+                    <input type="radio" id="foreigner" value="foreigner" name="foreigner">
+                    <label for="foreigner">Foreigner</label>
+                    </div>
+                    <div><label for="cars">Type of Ticket:</label></div>
+                    <div>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Only zoo</option>
+                            <option value="saab">Zoo + Bus</option>
+                            <option value="fiat">Zoo + safari</option>
+                            <option value="audi">Zoo + safari +Bus</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</center>
+<script>
+    function show()
+    {
+    let n1;
+    n1=Number(document.getElementById("n").value);
+    document.getElementById("total").innerHTML= "hiii";
+    }
+</script>
+<footer>
+	<div>
+		<div class="column">
+			<h4 style="color: white;">PARK INFORMATION</h4>
+			<ul>
+				<li><a href="about.html" class="f">About PARK</a></li>
+				<li><a href="safari.html" class="f">FLORA & FAUNA</a></li>
+				<li><a href="gallery.html" class="f">GALLERY</a></li>
+				<li><a href="about.html" class="f">HIGHLIGHTS</a></li>
+				<li><a href="contact.html" class="f">CONTACT US</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<h4 style="color: white;">TRAVEL INFORMATION</h4>
+			<ul>
+				<li><a href="traif.html" class="f">TRAIFF</a></li>
+				<li><a href="about.html" class="f">TIME TO VISIT</a></li>
+				<li><a href="about.html" class="f">MAP</a></li>
+				<li><a href="facilities.html" class="f">FACILITIES</a></li>
+				<li><a href="about.html" class="f">HOW TO REACH</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<h4 style="color: white;">PLACES TO SEE</h4>
+			<ul>
+				<li><a href="index.html" class="f">BOATING</a></li>
+				<li><a href="zoo.html" class="f">ZOO</a></li>
+				<li><a href="safari.html" class="f">SAFARI</a></li>
+				<li><a href="about.html" class="f">BUTTERFLY PARK</a></li>
+				<li><a href="safari.html" class="f">WILDERNESS TOURISM</a></li>
+			</ul>
+		</div>
+		<div class="column">
+			<h4 style="color: white;">SUPPORT</h4>
+			<ul>
+				<li><a href="about.html" class="f">RESCUE TEAM</a></li>
+				<li><a href="facilities.html" class="f">ANIMAL VETERINARY</a></li>
+				<li><a href="donation.html" class="f">ADOPTION SCHEME</a></li>
+				<li><a href="about.html" class="f">ZOO EDUCATION</a></li>
+				<li><a href="contact.html" class="f">PUBLICATION</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
